@@ -58,6 +58,7 @@ export const logoutUser = () => (dispatch, getState) => (
 );
 
 //Selectors
+export const selectCurrentUser = state => state.session;
 
 //Reducer
 const initialState = JSON.parse(sessionStorage.getItem('currentUser'));
