@@ -63,6 +63,16 @@ const NavBar = props => {
 
                     </div>
                 </nav>
+
+                <div className='main-low'>
+                    <div className='lower-nav'>
+                            <a className='nav-links' href="">Electronics</a>
+                            <a className='nav-links' href="">Best Sellers</a>
+                            <a className='nav-links' href="">Books</a>
+                            <a className='nav-links' href="">New Releases</a>
+                            <a className='nav-links' href="">Music</a>
+                    </div>
+                </div>
             </div>
         </>
     )

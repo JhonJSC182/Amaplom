@@ -26,10 +26,7 @@
 
 }
 
-.home {
-    margin-right: 10px;
 
-}
 
 .logo {
     width: 90px;
@@ -43,7 +40,7 @@
     width: 50vw;
     height: 5vh;
     border-radius: 5px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .dropdown-label {
@@ -95,10 +92,34 @@
 .middle {
     display: flex;
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .sessionLinks {
     position: relative;
     margin-left: 20px;
+}
+
+.main-low {
+    margin: auto;
+}
+
+.lower-nav {
+    width: 100%;
+    height: 10vh;
+    background-color: #232f3e;
+    /* position:absolute; */
+    text-align: center;
+    /* justify-content: center; */
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    width: 100%;
+    margin-top: 10px;
 }

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { selectCurrentUser } from "../../store/sessionReducer";
-import './Signup.css'
+import { loginUser, logoutUser, selectCurrentUser } from "../../store/sessionReducer";
+import './Signup.css';
+import whitelogo from '../../images/whitelogo.jpg';
 
 
 const Signup = props => {
@@ -9,14 +10,21 @@ const Signup = props => {
     const dispatch = useDispatch();
 
 
-    const [name, setName] = useState('')
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errors, setErrors] = useState([]);
+
 
     const handleSubmit = e => {
         e.preventDefault();
 
         dispatch(createUser({name, email, password}))
+        .catch(async res => {
+            let data = await res.json();
+            // console.log(data)
+            setErrors(data)
+        })
     }
 
     const sessionLinks = () => {
@@ -32,36 +40,45 @@ const Signup = props => {
         } else {
             return (
                 <div className='page-background'>
+                        <div className='signup-img'>
+                            <a href="/">
+                                <img className="signup-whitelogo" src={whitelogo} alt="" />
+                            </a>
+                        </div>
                     <div className='form-content'>
-                    <form className="signup-form" onSubmit={handleSubmit}>
-                    <h2 className="signup-signup" >Signup</h2>
 
-                        <label className="signup-label">Name</label>
-                        <input 
-                        className="signup-form-input"
-                        placeholder='name'
-                        value={name}
-                        onChange={e => setName(e.target.value)}
-                        />
+                        <form className="signup-form" onSubmit={handleSubmit}>
+                        <h2 className="signup-signup" >Signup</h2>
 
-                        <label className="signup-label">Email</label>
-                        <input 
-                        className="signup-form-input"
-                        placeholder='email'
-                        value={email}
-                        onChange={e => setEmail(e.target.value)}
-                        />
+                            <label className="signup-label">Name</label>
+                            <input 
+                            className="signup-form-input"
+                            placeholder='name'
+                            value={name}
+                            onChange={e => setName(e.target.value)}
+                            />
 
-                        <label className="signup-label">Password</label>
-                        <input 
-                        className="signup-form-input"
-                        placeholder='password'
-                        type="password"
-                        value={password}
-                        onChange={e => setPassword(e.target.value)}
-                        />
-                        <input className="signup-submit" type='submit' />
-                    </form>
+                            <label className="signup-label">Email</label>
+                            <input 
+                            className="signup-form-input"
+                            placeholder='email'
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
+                            />
+
+                            <label className="signup-label">Password</label>
+                            <input 
+                            className="signup-form-input"
+                            placeholder='password'
+                            type="password"
+                            value={password}
+                            onChange={e => setPassword(e.target.value)}
+                            />
+                            <input className="signup-submit" type='submit' />
+                            
+
+                        </form>
+                    {errors.map((err, idx) => (<p key={idx}>{err}</p>)) }
                     </div>
                 </div>
             )

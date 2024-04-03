@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../../store/sessionReducer';
 import { selectCurrentUser } from '../../store/sessionReducer';
 import { logoutUser } from '../../store/sessionReducer';
+import whitelogo from '../../images/whitelogo.jpg'
 import './Signin.css'
+import { NavLink } from 'react-router-dom';
 
 
 const Signin = props => {
@@ -12,11 +14,22 @@ const Signin = props => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [errors, setErrors] = useState([]);
+
+    const demoUser = e => {
+        e.preventDefault();
+
+        dispatch(loginUser({email: 'demo@demo.com', password: 'password'}))
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
 
         dispatch(loginUser({email, password}))
+        .catch(async res => {
+            let data = await res.json();
+            setErrors(data.errors)
+        })
     }
 
     const sessionLinks = () => {
@@ -27,21 +40,31 @@ const Signin = props => {
                     <button onClick={() => dispatch(logoutUser())}>
                         Logout
                     </button>
+
                 </div>
             )
         } else {
             return (
                 <div className='signin-page-background'>
+                    <div className='signin-img'>
+                        <a href='/'>
+                        <img className='whitelogo' src={whitelogo} alt="" />
+                        </a>
+                    </div>
+
                     <div className='sign-in-form-content'>
+                        
                         <form className='login-form' onSubmit={handleSubmit}>
                         <h2 className='signin-signin'>Sign in</h2>
                         <label className='signin-label'>Email </label>
                             <input 
                             className='signin-form-input'
                             placeholder='email'
+
                             value={email}
                             onChange={e => setEmail(e.target.value)}
                             />
+                           
 
                         <label className='signin-label'>Password </label>
                             <input 
@@ -51,9 +74,13 @@ const Signin = props => {
                             value={password}
                             onChange={e => setPassword(e.target.value)}
                             />
-                            <input className='signin-submit' type='submit' />
+                            <input className='signin-submit' type='submit' placeholder='Continue'/>
+                            <button className="demo" onClick={demoUser}>Demo login</button>
+                            
                         </form>
+                        {errors.map((err, idx) => (<p key={idx}>{err}</p>)) }
                     </div>
+
                 </div>
             )
         }
