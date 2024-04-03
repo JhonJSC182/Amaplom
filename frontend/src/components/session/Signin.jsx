@@ -19,7 +19,7 @@ const Signin = props => {
     const demoUser = e => {
         e.preventDefault();
 
-        dispatch(loginUser({email: 'demo@demo.com', password: 'password'}))
+        dispatch(loginUser({email: 'demo@user.io', password: 'password'}))
     }
 
     const handleSubmit = e => {
