@@ -51,7 +51,7 @@ const NavBar = props => {
                 <nav className='main-nav'>
                     <div className='upper-nav'>
                         <div className='home'>
-                            <a href="">
+                            <a href="/">
                                 <img className='logo' src={logo} alt="" />
                             </a>
                         </div>

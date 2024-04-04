@@ -5,7 +5,7 @@ import { selectCurrentUser } from '../../store/sessionReducer';
 import { logoutUser } from '../../store/sessionReducer';
 import whitelogo from '../../images/whitelogo.jpg'
 import './Signin.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Navigate } from 'react-router-dom';
 
 
 const Signin = props => {
@@ -35,27 +35,28 @@ const Signin = props => {
     const sessionLinks = () => {
         if (currentUser) {
             return (
-                <div>
-                    <p>Hello {currentUser.name}</p> 
-                    <button onClick={() => dispatch(logoutUser())}>
-                        Logout
-                    </button>
-
-                </div>
+                <Navigate to='/' />
             )
         } else {
             return (
                 <div className='signin-page-background'>
+                    
+
                     <div className='signin-img'>
                         <a href='/'>
                         <img className='whitelogo' src={whitelogo} alt="" />
                         </a>
                     </div>
 
+                    <div className='signin-box'>
+                        
                     <div className='sign-in-form-content'>
                         
                         <form className='login-form' onSubmit={handleSubmit}>
                         <h2 className='signin-signin'>Sign in</h2>
+
+                        <div className='signin-errors'>{errors.map((err, idx) => (<p key={idx}>{err}</p>)) }</div>
+
                         <label className='signin-label'>Email </label>
                             <input 
                             className='signin-form-input'
@@ -76,11 +77,24 @@ const Signin = props => {
                             />
                             <input className='signin-submit' type='submit' placeholder='Continue'/>
                             <button className="demo" onClick={demoUser}>Demo login</button>
+
+                            <p className='conditions'>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice</p>
+
+                            <hr />
                             
                         </form>
-                        {errors.map((err, idx) => (<p key={idx}>{err}</p>)) }
+                    </div>
+                    <div className='line'> 
+                        <p className='newAccount'> New to Quantum Shop?</p>
                     </div>
 
+                    <div className='create-account'>
+                        <NavLink to={'/signup'}>
+                            <button className='create-button' type="submit">Create your Amazon account</button>
+                        </NavLink>
+                    </div>
+
+                    </div>
                 </div>
             )
         }

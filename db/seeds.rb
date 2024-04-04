@@ -11,7 +11,7 @@
 
 # Creating a demo user
 
-User.create! (
+User.create!(
     name: 'Demo',
     email: 'demo@user.io',
     password: 'password'

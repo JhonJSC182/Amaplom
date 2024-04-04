@@ -72,3 +72,32 @@
 .signup-whitelogo {
     width: 100%;
 }
+
+.singup-errors {
+    color: red;
+}
+
+.signin-line {
+    width: 16%;
+}
+
+.line {
+    text-align: center;
+  }
+
+.create-account {
+    text-align: center;
+}
+
+.create-button {
+    background-color: white;
+    border: 1px solid #d3d2d2;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px #0000001a;
+    cursor: pointer;
+}
+
+.signin-redirect {
+    color: #0059ff;
+}
