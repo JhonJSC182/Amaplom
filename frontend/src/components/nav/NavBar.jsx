@@ -3,8 +3,8 @@ import { logoutUser, selectCurrentUser } from '../../store/sessionReducer';
 import './NavBar.css';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../images/logo.jpg'
-import search from '../../images/search.png'
+import logos from '../../images/logos.png'
+import flag from '../../images/flag.jpg'
 
 const NavBar = props => {
     const dispatch = useDispatch();
@@ -44,7 +44,6 @@ const NavBar = props => {
             )
         }
     }
-
     return (
         <>
             <div className='all'>
@@ -52,14 +51,36 @@ const NavBar = props => {
                     <div className='upper-nav'>
                         <div className='home'>
                             <a href="/">
-                                <img className='logo' src={logo} alt="" />
+                                <img className='logo' src={logos} alt="" />
                             </a>
                         </div>
+
+                        <div className='address-container'>
+                        <div className='location'><i class="fa-solid fa-location-dot"></i></div>
+                                {/* <img className='location' src={location} /> */}
+                                <p>Select your address</p>
+                        </div>
+
                         <div className='middle'>
+                            <select className='search-select'><option value="">All</option></select>
                             <input placeholder='Search Amazon' className='searchBar' type='text' />
-                            <img className='search-pic' src={search} alt="" />
+                            <div className='search-pic' >
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            {/* <img className='search-pic' src={search} alt="" /> */}
+                        </div>
+
+                        <div className='language-container'>
+                            <p>EN</p>
+                            <div className='language-img'>
+                                <img src={flag} alt="" />
+                            </div>
                         </div>
                     {sessionLinks()}
+
+                    <div className='cart-container'>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
 
                     </div>
                 </nav>

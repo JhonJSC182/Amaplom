@@ -78,6 +78,7 @@ const Signup = props => {
                             />
                             <input className="signup-submit" type='submit' />
                             
+                            
                             <hr />
 
                             <div>

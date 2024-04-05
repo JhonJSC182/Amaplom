@@ -28,18 +28,24 @@
 
 }
 
+
+
 .signup-form {
     text-align: center;
 
 }
 
 .signup-form-input {
+    display: block;
+    text-align: start;
+    font-optical-sizing: auto;
     width: 95%;
     /* text-align: center; */
     margin-bottom: 30px;
     padding: 10px;
     border-radius: 10px;
     border: solid 1px;
+
 }
 
 
