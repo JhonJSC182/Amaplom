@@ -147,22 +147,35 @@ p {
     outline: 3px solid orange;
 }
 
-.sessionLinks {
+.sessionLinks{
     position: relative;
-    margin-left: 30px;
+    left: 10px;
+}
+
+.sessionLinks p {
+    margin-left: 5px;
 }
 
 .main-low {
-    margin: auto;
+    /* margin: auto; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color:#232f3e ;
+
 }
 
 .lower-nav {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
+    top: 50%;
     background-color: #232f3e;
     /* position:absolute; */
     text-align: center;
-    /* justify-content: center; */
+    justify-content: center;
+    display: flex;
+    
 }
 
 a {
@@ -170,13 +183,9 @@ a {
     color: white;
 }
 
-.nav-links {
-    width: 100%;
-    margin-top: 10px;
-}
-
 .language-container {
     margin-left: 30px;
+    margin-right: 10px;
 }
 
 .language-img {
@@ -308,4 +317,47 @@ h2 {
     width: 80%;
     height: 50%;
     padding: 20px;
+}
+
+.nav-link1 {
+    left: 36%;
+    position: absolute;
+    top: 25%;
+    margin-right: 20px;
+}
+
+.nav-link2 {
+    left: 43%;
+    position: absolute;
+    top: 25%;
+}
+
+.nav-link3 {
+    left: 50%;
+    position: absolute;
+    top: 25%;
+}
+
+.nav-link4 {
+    left: 55%;
+    position: absolute;
+    top: 25%;
+}
+
+.nav-link5 {
+    left: 64%;
+    position: absolute;
+    top: 25%;
+}
+
+.bottom {
+    height: 100%
+}
+
+.logout-button {
+    background-color: rgb(19, 25, 33);
+    border: none;
+    color: white;
+    display: flex;
+    cursor: pointer;
 }

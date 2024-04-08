@@ -18,12 +18,12 @@ const NavBar = props => {
     const sessionLinks = () => {
         if (currentUser) {
             return (
-                <span className='session-links'>
+                <div className='session-links'>
                     <p>Hello {currentUser.name}</p> 
-                    <button onClick={() => dispatch(logoutUser())}>
+                    <button className='logout-button' onClick={() => dispatch(logoutUser())}>
                         Logout
                     </button>
-                </span>
+                </div>
             )
         } else {
             return (
@@ -49,6 +49,11 @@ const NavBar = props => {
             )
         }
     }
+
+
+
+    
+
     return (
         <>
             <div className='all'>
@@ -72,7 +77,7 @@ const NavBar = props => {
                             <div className='search-pic' >
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
-                            {/* <img className='search-pic' src={search} alt="" /> */}
+                            
                         </div>
 
                         <div className='language-container'>
@@ -92,15 +97,17 @@ const NavBar = props => {
 
                 <div className='main-low'>
                     <div className='lower-nav'>
-                            <a className='nav-links' href="">Electronics</a>
-                            <a className='nav-links' href="">Best Sellers</a>
-                            <a className='nav-links' href="">Books</a>
-                            <a className='nav-links' href="">New Releases</a>
-                            <a className='nav-links' href="">Music</a>
+                            <a className='nav-link1' href="">Electronics</a>
+                            <a className='nav-link2' href="">Best Sellers</a>
+                            <a className='nav-link3' href="">Books</a>
+                            <a className='nav-link4' href="">New Releases</a>
+                            <a className='nav-link5' href="">Music</a>
                     </div>
                 </div>
+    
+            
 
-                <div className='mid-point'>
+                {/* <div className='mid-point'>
                     <div className='background-img'>
                         <img src={background} alt="" />
 
@@ -130,7 +137,13 @@ const NavBar = props => {
                     </div>
 
 
-                </div>
+                </div> */}
+
+                {/* <div className='bottom'>
+                    <div className='back-to-top'>
+                        <h1>bar</h1>
+                    </div>
+                </div> */}
             </div>
         </>
     )

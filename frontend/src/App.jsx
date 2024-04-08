@@ -3,7 +3,8 @@ import NavBar from './components/nav/NavBar.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Signin from './components/session/Signin.jsx'
 import Signup from './components/session/Signup.jsx'
-
+import Product from './components/products/product.jsx'
+import Home from './components/home/home.jsx'
 // function Layout() {
   
 // }
@@ -11,7 +12,7 @@ import Signup from './components/session/Signup.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element:<NavBar />
+    element: <Home />
   },
   {
     path: 'signin',
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: 'signup',
     element: <Signup/>
+  },
+  {
+    path: 'product',
+    element: <Product />
   }
 ])
 
