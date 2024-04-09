@@ -5,6 +5,7 @@ import Signin from './components/session/Signin.jsx'
 import Signup from './components/session/Signup.jsx'
 import Product from './components/products/product.jsx'
 import Home from './components/home/home.jsx'
+import Checkout from './components/checkout/Checkout.jsx'
 // function Layout() {
   
 // }
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: 'product',
     element: <Product />
+  },
+  {
+    path: 'checkout',
+    element: <Checkout />
   }
 ])
 
