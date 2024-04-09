@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-currency-format": "^1.1.0"
+  }
+}

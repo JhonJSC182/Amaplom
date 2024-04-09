@@ -1,0 +1,109 @@
+.page-background {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    background-color: rgb(255, 255, 255);
+}
+
+.form-content {
+    /* display: flex; */
+    height: 55%;
+    width: 18%;
+    position: relative;
+    /* top: 15vh;
+    left: 35%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 0.5px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+
+.signup-form {
+    text-align: center;
+
+}
+
+.signup-form-input {
+    display: block;
+    text-align: start;
+    font-optical-sizing: auto;
+    width: 95%;
+    /* text-align: center; */
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px;
+
+}
+
+
+.signup-submit {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: rgb(255, 216, 20);
+    cursor: pointer;
+    border: none;
+}
+
+.signup-label {
+    margin-right: 90%;
+}
+
+.signup-signup {
+    margin-right: 70%;
+    margin-top: 0px;
+}
+
+.signup-img {
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup-whitelogo {
+    width: 100%;
+}
+
+.singup-errors {
+    color: red;
+}
+
+.signin-line {
+    width: 16%;
+}
+
+.line {
+    text-align: center;
+  }
+
+.create-account {
+    text-align: center;
+}
+
+.create-button {
+    background-color: white;
+    border: 1px solid #d3d2d2;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px #0000001a;
+    cursor: pointer;
+}
+
+.signin-redirect {
+    color: #0059ff;
+}
