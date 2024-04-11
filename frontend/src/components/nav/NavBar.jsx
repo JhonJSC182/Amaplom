@@ -66,7 +66,7 @@ const NavBar = props => {
                         </div>
 
                         <div className='address-container'>
-                        <div className='location'><i class="fa-solid fa-location-dot"></i></div>
+                        <div className='location'><i className="fa-solid fa-location-dot"></i></div>
                                 {/* <img className='location' src={location} /> */}
                                 <p>Select your address</p>
                         </div>
@@ -75,7 +75,7 @@ const NavBar = props => {
                             <select className='search-select'><option value="">All</option></select>
                             <input placeholder='Search Amazon' className='searchBar' type='text' />
                             <div className='search-pic' >
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i className="fa-solid fa-magnifying-glass"></i>
                             </div>
                             
                         </div>
@@ -89,7 +89,7 @@ const NavBar = props => {
                     {sessionLinks()}
 
                     <div className='cart-container'>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i className="fa-solid fa-cart-shopping"></i>
                     </div>
 
                     </div>
@@ -97,11 +97,10 @@ const NavBar = props => {
 
                 <div className='main-low'>
                     <div className='lower-nav'>
-                            <a className='nav-link1' href="">Electronics</a>
-                            <a className='nav-link2' href="">Best Sellers</a>
-                            <a className='nav-link3' href="">Books</a>
-                            <a className='nav-link4' href="">New Releases</a>
-                            <a className='nav-link5' href="">Music</a>
+                            <a className='nav-link1' href="/categories/electronics">Electronics</a>
+                            <a className='nav-link2' href="/categories/bestseller">Best Sellers</a>
+                            <a className='nav-link3' href="/categories/books">Books</a>
+                            <a className='nav-link4' href="/categories/newReleases">New Releases</a>
                     </div>
                 </div>
     

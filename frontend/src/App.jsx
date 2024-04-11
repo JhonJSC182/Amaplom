@@ -6,6 +6,7 @@ import Signup from './components/session/Signup.jsx'
 import Product from './components/products/product.jsx'
 import Home from './components/home/home.jsx'
 import Checkout from './components/checkout/Checkout.jsx'
+import ProductIndex from './components/products/ProductIndex.jsx'
 // function Layout() {
   
 // }
@@ -24,12 +25,20 @@ const router = createBrowserRouter([
     element: <Signup/>
   },
   {
-    path: 'product',
+    path: 'products/:productId',
     element: <Product />
   },
   {
     path: 'checkout',
     element: <Checkout />
+  },
+  {
+    path: 'products',
+    element: <ProductIndex />
+  },
+  {
+    path: '/categories/:category',
+    element: <ProductIndex />
   }
 ])
 
