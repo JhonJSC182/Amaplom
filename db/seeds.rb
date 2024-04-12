@@ -11,11 +11,11 @@
 
 # Creating a demo user
 
-# User.create!(
-#     name: 'Demo',
-#     email: 'demo@user.io',
-#     password: 'password'
-# )
+User.create!(
+    name: 'Demo',
+    email: 'demo@user.io',
+    password: 'password'
+)
 
 
 #creating products
