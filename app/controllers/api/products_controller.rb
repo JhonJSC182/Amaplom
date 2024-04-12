@@ -8,12 +8,11 @@ class Api::ProductsController < ApplicationController
         @product = Product.find_by(id: params[:id])
     
         if @product
-            render: show
+            render :show
         else
             render json: { product: nil }
         end
     end
-
 
 
 end

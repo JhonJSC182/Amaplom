@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: amaplom_production
   username: amaplom
   password: <%= ENV["AMAPLOM_DATABASE_PASSWORD"] %>
