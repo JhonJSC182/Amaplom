@@ -1,24 +1,6 @@
-# README
+# Amaplom
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Amaplom Live!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Overview
+Amaplom is an Amazon clone that offers guests an e-commerce experience. Allowing user-authentication (sign in/up), being able to browse through the website and look at different products based on their category. Being able to access a show page that provides detailed information about a specific product, as well as doing some online shopping (ability to add products to your cart).
