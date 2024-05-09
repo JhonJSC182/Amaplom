@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logos from '../../images/logos.png'
 import flag from '../../images/flag.jpg'
+import github from '../../images/github.svg.png'
+import linked from '../../images/linked.jpg'
 import background from '../../images/background.jpg'
 import electronics from '../../images/electronics.jpg'
 import books from '../../images/books.jpg'
@@ -81,7 +83,7 @@ const NavBar = props => {
                         </div>
 
                         <div className='language-container'>
-                            <p>EN</p>
+                            <p className='language-used'>EN</p>
                             <div className='language-img'>
                                 <img src={flag} alt="" />
                             </div>
@@ -90,6 +92,14 @@ const NavBar = props => {
 
                     <div className='cart-container'>
                         <i className="fa-solid fa-cart-shopping"></i>
+                    </div>
+                        {/* <i class="fa-brands fa-github"></i> */}
+                    <div className='github'>
+                        <a href="https://github.com/JhonJSC182"><img src={github} alt="" /></a>
+                    </div>
+
+                    <div className='linked-in'>
+                        <a href="https://www.linkedin.com/in/jhon-salazar-655b24208/"><img src={linked} alt="" /></a>
                     </div>
 
                     </div>

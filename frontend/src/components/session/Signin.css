@@ -87,10 +87,34 @@
 }
 
 .signin-errors {
-    color: red;   
+    color: red;  
 }
 
 .conditions {
     width: 100%;
     height: 100%;
+    color: black;
+    top: 5px;
+    position: relative;
+}
+
+.newAccount {
+    color: black;
+    position: relative;
+    top: 5px;
+}
+
+.create-account {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: 15px;
+}
+
+.link {
+    width: 16%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
 }

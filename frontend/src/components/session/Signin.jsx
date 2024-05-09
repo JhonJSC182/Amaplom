@@ -21,7 +21,6 @@ const Signin = props => {
 
         dispatch(loginUser({email: 'demo@user.io', password: 'password'}))
     }
-
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -85,11 +84,11 @@ const Signin = props => {
                         </form>
                     </div>
                     <div className='line'> 
-                        <p className='newAccount'> New to Quantum Shop?</p>
+                        <p className='newAccount'>New to Amazon?</p>
                     </div>
 
                     <div className='create-account'>
-                        <NavLink to={'/signup'}>
+                        <NavLink className='link' to={'/signup'}>
                             <button className='create-button' type="submit">Create your Amazon account</button>
                         </NavLink>
                     </div>
