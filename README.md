@@ -6,12 +6,24 @@
 Amaplom is an Amazon clone that offers guests an e-commerce experience. Allowing user-authentication (sign in/up), being able to browse through the website and look at different products based on their category. Being able to access a show page that provides detailed information about a specific product, as well as doing some online shopping (ability to add products to your cart).
 
 ## Homepage
+![image](https://github.com/JhonJSC182/Amaplom/assets/112995904/b0ebf6d8-0c16-4b17-9136-8652e067eed2)
+
+<br>
 
 ## Signup Form
 
+![image](https://github.com/JhonJSC182/Amaplom/assets/112995904/ef5f066b-7bea-4bcc-a073-3a73e9339998)
+
+<br>
+
 ## Products Index
+![image](https://github.com/JhonJSC182/Amaplom/assets/112995904/98ee5d61-6027-4450-90ec-5f60abb5b64a)
+
+<br>
 
 ## Product Show
+![image](https://github.com/JhonJSC182/Amaplom/assets/112995904/3fc95822-60ac-4bb5-9ed6-d30e5f9fe16c)
+
 
 ## Technologies used
 * Languages: JavaScript, Ruby, HTML, CSS
