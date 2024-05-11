@@ -3,6 +3,8 @@ class User < ApplicationRecord
     validates :password, length: { minimum: 6 }, allow_nil: true
     validates :name, presence: true
 
+    has_many :cart_items
+
     has_secure_password #defines password= and authenticate
     before_validation :ensure_session_token
 
