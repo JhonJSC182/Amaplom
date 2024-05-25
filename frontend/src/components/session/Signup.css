@@ -11,9 +11,14 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* .signup-box {
+    top: 20%;
+    position: relative;
+} */
+
 .form-content {
     /* display: flex; */
-    height: 55%;
+    height: 50vh;
     width: 18%;
     position: relative;
     /* top: 15vh;
@@ -77,6 +82,8 @@
 
 .signup-whitelogo {
     width: 100%;
+    /* top: 20vh;
+    position: relative; */
 }
 
 .singup-errors {
@@ -106,4 +113,14 @@
 
 .signin-redirect {
     color: #0059ff;
+}
+
+.low-divider {
+    top: 20px;
+    position: relative;
+}
+
+.bottom-text {
+    top: 30px;
+    position: relative;
 }

@@ -79,9 +79,9 @@ const Signup = props => {
                             <input className="signup-submit" type='submit' />
                             
                             
-                            <hr />
+                            <hr className="low-divider" />
 
-                            <div>
+                            <div className="bottom-text">
                                 <p>Already have an account?
                                     <a className="signin-redirect" href="/signin"> Sigin</a>
                                 </p>
