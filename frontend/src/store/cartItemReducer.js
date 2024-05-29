@@ -106,3 +106,31 @@ export const clearCartItem = cart_itemId => (dispatch, getState) => {
         dispatch(removeCartItem(cart_itemId))
     })
 }
+
+
+const cartItemReducer = (state = {}, action) => {
+    const nextState = { ...state }
+        switch (action.type) {
+        case RECEIVE_CARTITEM:
+            nextState[action.data.cartItem.id] = action.data.cartItem;
+            return nextState;
+
+        case CREATE_CARTITEM:
+            nextState[action.data.id] = action.data;
+            return nextState;    
+        
+        case UPDATE_CARTITEM:
+            nextState[action.data.cartItem.id] = action.data.cartItem;
+            return nextState;
+        
+        case RECEIVE_CARTITEMS:
+            return action.data.cartItems
+    
+        case DESTROY_CARTITEM: 
+            delete nextState[action.cart_itemId];
+            return nextState;
+        
+            default:
+            return state;
+    }
+}
