@@ -78,9 +78,6 @@ export const createCartItem = (cartItem) => (dispatch, getState) => {
     .then(data => {
         dispatch(newCartItem(data)) 
     })
-    // .catch(error => {
-    //     console.log('Failed to create cart item:', error)
-    // })
 }
 
 export const changeCartItem = cart_item => (dispatch, getState) => {
@@ -107,6 +104,13 @@ export const clearCartItem = cart_itemId => (dispatch, getState) => {
     })
 }
 
+
+// Selector
+
+export const selectCartItem = (cart_itemId) => state => state.cart_item[cart_itemId]
+
+
+// Reducer
 
 const cartItemReducer = (state = {}, action) => {
     const nextState = { ...state }
