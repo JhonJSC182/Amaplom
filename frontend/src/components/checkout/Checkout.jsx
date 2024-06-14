@@ -2,6 +2,7 @@ import './Checkout.css'
 import NavBar from '../nav/NavBar'
 import Subtotal from './Subtotal'
 
+
 const Checkout = props => {
 
 
@@ -9,11 +10,9 @@ const Checkout = props => {
         <>
             <NavBar />
 
-            <div className='checkout'>
+            <div className='checkout'> 
                 <div className='checkout_left'>
-                    {/* <div className='checkout_ad'>
 
-                    </div> */}
 
                     <div>
                         <h2 className='checkout_title'>
@@ -24,7 +23,7 @@ const Checkout = props => {
                 </div>
 
                 <div className="checkout_right">
-                    <Subtotal />
+                   <Subtotal />
 
                 </div>
 

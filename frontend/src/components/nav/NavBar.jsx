@@ -90,8 +90,11 @@ const NavBar = props => {
                         </div>
                     {sessionLinks()}
 
+                    
                     <div className='cart-container'>
-                        <i className="fa-solid fa-cart-shopping"></i>
+                        <a href="/checkout">
+                            <i className="fa-solid fa-cart-shopping"></i>
+                        </a>
                     </div>
                         {/* <i class="fa-brands fa-github"></i> */}
                     <div className='github'>

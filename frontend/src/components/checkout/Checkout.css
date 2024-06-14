@@ -1,5 +1,5 @@
 .checkout {
-    border: solid;
+    /* border: solid; */
     top: 15%;
     position: absolute;
     width: 99.8%;
@@ -19,3 +19,4 @@
     border-bottom: 1px solid lightgray;
     width: 70vw;
 }
+
