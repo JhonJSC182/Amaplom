@@ -94,6 +94,7 @@ const NavBar = props => {
                     <div className='cart-container'>
                         <a href="/checkout">
                             <i className="fa-solid fa-cart-shopping"></i>
+                            <span className='basket-count'>0</span>
                         </a>
                     </div>
                         {/* <i class="fa-brands fa-github"></i> */}

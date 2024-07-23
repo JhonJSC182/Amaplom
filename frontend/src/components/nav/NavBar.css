@@ -207,6 +207,13 @@ a {
     margin-left: 30px;
 }
 
+.basket-count {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    padding: 2px;
+}
+
 .mid-point {
     /* border: solid 5px; */
     text-align: center;
