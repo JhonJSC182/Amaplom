@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Signin from './components/session/Signin.jsx'
 import Signup from './components/session/Signup.jsx'
 import Product from './components/products/product.jsx'
-import Home from './components/home/home.jsx'
+import Home from './components/home/Home.jsx'
 import Checkout from './components/checkout/Checkout.jsx'
 import ProductIndex from './components/products/ProductIndex.jsx'
 // function Layout() {

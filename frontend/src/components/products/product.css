@@ -70,7 +70,7 @@
     position: absolute;
 }
 
-button {
+.product_button {
     background-color: #ffd814;
     text-align: center;
     top: 60%;

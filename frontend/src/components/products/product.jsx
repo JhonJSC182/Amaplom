@@ -58,7 +58,7 @@ const Product = props => {
                     </select>
                 </div>
 
-                    <button>Add to cart</button>
+                    <button className='product_button'>Add to cart</button>
                 </div>
             </div>
 

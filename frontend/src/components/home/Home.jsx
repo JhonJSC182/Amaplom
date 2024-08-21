@@ -1,49 +1,43 @@
-import background from '../../images/background.jpg'
-import electronics from '../../images/electronics.jpg'
-import books from '../../images/books.jpg'
-import bestSeller from '../../images/bestSellers.jpg'
-import newReleases from '../../images/newReleases.jpg'
-import NavBar from '../nav/NavBar'
+import "./Home.css";
+import homebackground from '../../images/home_background.jpg'
+import NavBar from "../nav/NavBar";
+import Troduct from "../troudct/troduct";
+import booklean from '../../images/booklean.jpg'
 
-
-const Home = props => {
-
+function Home() {
     return (
         <>
-        {/* <NavBar/> */}
+            <NavBar />
+                <div className="home">
+                    <div className="home_container">
+                        <img className="home_image" src={homebackground} alt="" />
 
-        <div className='mid-point'>
-            <div className='background-img'>
-                <img src={background} alt="" />
-
-    
-                    <div className='first-row'>
-                        <div className='column-1'>    
-                            <h2>Shop Electronics</h2>
-
-                            <img className='electronics-img' src={electronics} alt="" />
+                        <div className="home_row">
+                            <Troduct 
+                                title='The lean Startup' 
+                                price={19.99} 
+                                image={booklean}
+                                rating={5}
+                            />
+                                
+                            <Troduct />
                         </div>
-                        <div className='column-2'>    
-                            <h2>Books</h2>
 
-                            <img className='books-img' src={books} alt="" />
+                        <div className="home_row">
+                            <Troduct />
+                            <Troduct />
+                            <Troduct />
                         </div>
-                        <div className='column-3'>    
-                            <h2>Best Sellers</h2>
 
-                            <img className='bestSeller-img' src={bestSeller} alt="" />
+                        <div className="home_row">
+                           <Troduct />
                         </div>
-                        <div className='column-4'>    
-                            <h2>New Releases</h2>
 
-                            <img className='newReleases-img' src={newReleases} alt="" />
-                        </div>
                     </div>
-            </div>
-        </div>
+                </div>
         </>
+        
     )
 }
 
-
-export default Home
+export default Home;

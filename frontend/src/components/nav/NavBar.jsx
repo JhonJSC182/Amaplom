@@ -7,11 +7,7 @@ import logos from '../../images/logos.png'
 import flag from '../../images/flag.jpg'
 import github from '../../images/github.svg.png'
 import linked from '../../images/linked.jpg'
-import background from '../../images/background.jpg'
-import electronics from '../../images/electronics.jpg'
-import books from '../../images/books.jpg'
-import bestSeller from '../../images/bestSellers.jpg'
-import newReleases from '../../images/newReleases.jpg'
+
 
 const NavBar = props => {
     const dispatch = useDispatch();
@@ -21,7 +17,7 @@ const NavBar = props => {
         if (currentUser) {
             return (
                 <div className='session-links'>
-                    <p>Hello {currentUser.name}</p> 
+                    <p className='username'>Hello {currentUser.name}</p> 
                     <button className='logout-button' onClick={() => dispatch(logoutUser())}>
                         Logout
                     </button>
@@ -61,7 +57,7 @@ const NavBar = props => {
             <div className='all'>
                 <nav className='main-nav'>
                     <div className='upper-nav'>
-                        <div className='home'>
+                        <div className='homenav'>
                             <a href="/">
                                 <img className='logo' src={logos} alt="" />
                             </a>
