@@ -50,7 +50,6 @@ const ProductIndex = props => {
                         <div key={`${product.id}_${index}`}>
                             <ProductItem product={product}/>
                         </div>
-                        
                         ))}
                 </div>
             </ul>

@@ -8,15 +8,18 @@
     height: max-content;
 }
 
-/* .checkout_ad {
+.checkout_ad {
     width: 100%;
     margin-bottom: 10px;
-} */
+}
 
 .checkout_title {
     margin-right: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgray;
-    width: 70vw;
+    /* width: 70vw; */
 }
 
+.checkout_left {
+    margin-left: 15px;
+}

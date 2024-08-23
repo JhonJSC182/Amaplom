@@ -1,6 +1,7 @@
 import './Checkout.css'
 import NavBar from '../nav/NavBar'
 import Subtotal from './Subtotal'
+import amazon_ad from '../../images/amazon_ad.jpg'
 
 
 const Checkout = props => {
@@ -12,7 +13,7 @@ const Checkout = props => {
 
             <div className='checkout'> 
                 <div className='checkout_left'>
-
+                    <img className='checkout_ad' src={amazon_ad} alt="" />
 
                     <div>
                         <h2 className='checkout_title'>
