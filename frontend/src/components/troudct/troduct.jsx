@@ -1,5 +1,4 @@
 import './Troduct.css'
-import booklean from '../../images/booklean.jpg'
 
 function Troduct( {title, image, price, rating}) {
     return  (

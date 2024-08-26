@@ -2,7 +2,12 @@ import './Checkout.css'
 import NavBar from '../nav/NavBar'
 import Subtotal from './Subtotal'
 import amazon_ad from '../../images/amazon_ad.jpg'
-
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchProducts, selectProduct } from '../../store/productReducer'
+import { useEffect } from 'react'
+import { fetchCartItem, fetchCartItems } from '../../store/cartItemReducer'
+import { selectCurrentUser } from '../../store/sessionReducer'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const Checkout = props => {
 
